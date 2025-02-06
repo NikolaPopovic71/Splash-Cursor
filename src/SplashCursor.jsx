@@ -1,6 +1,8 @@
 "use client";
+import React from "react";
 import { useEffect, useRef } from "react";
 import "./style.css";
+
 
 function SplashCursor({
   // You can customize these props if you want
