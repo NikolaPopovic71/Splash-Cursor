@@ -1272,6 +1272,25 @@ function SplashCursor({
           display: "block",
         }}
       />
+
+      {/* Centered Company Name */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          fontFamily: "'Lato', sans-serif",
+          fontSize: "3rem",
+          fontWeight: "700",
+          color: "white",
+          textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
+          textAlign: "center",
+          pointerEvents: "none",
+        }}
+      >
+        ponITech
+      </div>
       {/* Add a footer with credits and links */}
       <div
         style={{
