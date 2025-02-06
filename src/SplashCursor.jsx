@@ -3,7 +3,6 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import "./style.css";
 
-
 function SplashCursor({
   // You can customize these props if you want
   SIM_RESOLUTION = 128,
@@ -1273,6 +1272,41 @@ function SplashCursor({
           display: "block",
         }}
       />
+      {/* Add a footer with credits and links */}
+      <div
+        style={{
+          position: "fixed",
+          bottom: "10px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          color: "white",
+          fontSize: "14px",
+          fontFamily: "Arial, sans-serif",
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          padding: "5px 10px",
+          borderRadius: "5px",
+          pointerEvents: "auto",
+        }}
+      >
+        Great thanks to{" "}
+        <a
+          href="https://www.reactbits.dev/animations/splash-cursor"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#4dabf7", textDecoration: "none" }}
+        >
+          Reactbits
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://github.com/DavidHDev/react-bits"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#4dabf7", textDecoration: "none" }}
+        >
+          DavidHDev
+        </a>
+      </div>
     </div>
   );
 }
