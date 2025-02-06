@@ -1,10 +1,10 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-    base: '/Splash-Cursor/',  // Must match GitHub repo name
-    build: {
-      outDir: 'dist',
-    }
-  });
-  
+  plugins: [react()],
+  base: '/Splash-Cursor/',  // Replace with your actual GitHub repository name
+  build: {
+    outDir: 'dist',
+  }
+});
